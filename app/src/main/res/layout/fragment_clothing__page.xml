@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Clothing_Page"
+    android:id="@+id/nav_clothing"
+    >
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="PICK A CATEGORY!"
+            android:textSize="25dp"
+            android:layout_marginLeft="55dp"
+            android:paddingBottom="30dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="SHIRTS"
+            android:textSize="40dp"
+            android:id="@+id/shirtbutton"
+            android:backgroundTint="@color/greyBlue"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="PANTS"
+            android:textSize="40dp"
+            android:id="@+id/pantbutton"
+            android:backgroundTint="@color/greyBlue"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="FOOTWEAR"
+            android:textSize="40dp"
+            android:id="@+id/footwearbutton"
+            android:backgroundTint="@color/greyBlue"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="OUTERWEAR"
+            android:textSize="40dp"
+            android:id="@+id/outerwearbutton"
+            android:backgroundTint="@color/greyBlue"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="ACCESSORIES"
+            android:textSize="40dp"
+            android:id="@+id/accessoriesbutton"
+            android:backgroundTint="@color/greyBlue"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            />
+
+
+    </LinearLayout>
+
+</FrameLayout>

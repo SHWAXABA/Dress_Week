@@ -1,0 +1,52 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view"
+
+    >
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/casualmode"
+            android:icon="@drawable/home_icon"
+            android:title="Casual"/>
+        <item
+            android:id="@+id/formalmode"
+            android:icon="@drawable/home_icon"
+            android:title="Formal"/>
+        <item
+            android:id="@+id/nightlifemode"
+            android:icon="@drawable/home_icon"
+            android:title="Night Life"/>
+        <item
+            android:id="@+id/clothingpage"
+            android:icon="@drawable/home_icon"
+            android:title="Clothing"/>
+        <item
+            android:id="@+id/achievements"
+            android:icon="@drawable/home_icon"
+            android:title="Achievements"/>
+        <item
+        android:id="@+id/laundrybasket"
+        android:icon="@drawable/home_icon"
+        android:title="Laundry"/>
+        <item
+            android:id="@+id/WeatherApp"
+            android:icon="@drawable/home_icon"
+            android:title="Weather"/>
+        <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings_icon"
+        android:title="Settings"/>
+    </group>
+    <item
+        android:title="">
+    <menu>
+        <item android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Logout"
+            >
+
+        </item>
+    </menu>
+    </item>
+</menu>

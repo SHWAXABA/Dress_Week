@@ -7,5 +7,6 @@
     <color name="safariBrown">#635F4C</color>
     <color name="englishMustard">#B7A833</color>
     <color name="tangyYellow">#FCCC07</color>
-
+    <color name="underline">#080806</color>
+    <color name="deleteRColor">#FF1100</color>
 </resources>

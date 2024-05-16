@@ -3,6 +3,7 @@ package com.example.dressweek
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -10,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDialogFragment
 import androidx.core.view.GravityCompat
 import androidx.appcompat.widget.Toolbar
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -32,6 +34,9 @@ class HomeActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        //window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+        window.statusBarColor = ContextCompat.getColor(this, R.color.greyBlue)
+
         drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)

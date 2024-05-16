@@ -20,30 +20,35 @@
             android:layout_height="wrap_content"
             android:title="TODAY'S OUTFIT"/>
         <ImageView
+            android:id="@+id/Shirt"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            android:background="@drawable/whiteshirt"/>
+            />
         <ImageView
+            android:id="@+id/Pant"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            android:background="@drawable/blue_jeans"/>
+            />
         <ImageView
+            android:id="@+id/Footwear"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            android:background="@drawable/white_shoes"/>
+            />
         <ImageView
+            android:id="@+id/Outerwear"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            android:background="@drawable/kway"/>
+            />
         <ImageView
+            android:id="@+id/Accessories"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            android:background="@drawable/rolexblack"/>
+            />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -56,6 +61,7 @@
                 android:layout_marginTop="40dp"
                 >
                 <Button
+                    android:id="@+id/reloadButton"
                     android:layout_width="160dp"
                     android:layout_height="70dp"
                     android:gravity="center"
@@ -64,6 +70,7 @@
                     android:drawableTint="@color/white"
                     />
                 <Button
+                    android:id="@+id/SaveOutfitButton"
                     android:layout_width="160dp"
                     android:layout_height="70dp"
                     android:gravity="center"

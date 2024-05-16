@@ -20,7 +20,7 @@ class WeatherApp_Page : Fragment() {
 
     private val API: String = "7a0642423e5564e0ec6e709e63fa1717"
     private val CITY:String = "Durban"
-
+    private lateinit var homePage: HomePage
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,6 +32,7 @@ class WeatherApp_Page : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        homePage = parentFragment as? HomePage ?: return
         WeatherAsyncTask().execute()
     }
 
@@ -71,6 +72,7 @@ class WeatherApp_Page : Fragment() {
                 val temp = main.getString("temp")+"°C"
                 val tempMin = "Min Temp: " + main.getString("temp_min")+"°C"
                 val tempMax = "Max Temp: " + main.getString("temp_max")+"°C"
+                homePage.onWeatherDataReceived(tempMax.toDouble())
                 val pressure = main.getString("pressure")
                 val humidity = main.getString("humidity")
 

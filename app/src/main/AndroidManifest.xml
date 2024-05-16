@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-<uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +21,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DressWeek"
         tools:targetApi="31">
+        <activity
+            android:name=".AdminPage"
+            android:exported="false" />
+        <activity
+            android:name=".Accessories_Page"
+            android:exported="false" />
+        <activity
+            android:name=".OuterWear_Page"
+            android:exported="false" />
+        <activity
+            android:name=".FootWear_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Pants_Page"
+            android:exported="false" />
+        <activity
+            android:name=".AddItem"
+            android:exported="true" />
+        <activity
+            android:name=".Shirt_Page"
+            android:exported="true" />
         <activity
             android:name=".SignUpThankYou"
             android:exported="false" />
@@ -27,9 +57,7 @@
         </activity>
         <activity
             android:name=".HomeActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />
